@@ -2,12 +2,12 @@
   <script>
    if (window.parent) {
     if (/thirdparty=yes/.test(document.cookie)) {
-      window.parent.postMessage('MM:3PCsupported', '*');
+      window.parent.postMessage('OKTA:3PCsupported', '*');
     } else {
-      window.parent.postMessage('MM:3PCunsupported', '*');
+      window.parent.postMessage('OKTA:3PCunsupported', '*');
     }
     document.cookie = 'thirdparty=; expires=Thu, 01 Jan 1970 00:00:01 GMT; SameSite=None; Secure; path=/okta-auth-js; domain=shuowu.github.io; ';
     console.log(document.cookie);
    }
   </script>
-  </body>
+</body>
